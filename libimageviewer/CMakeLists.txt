@@ -1,0 +1,5 @@
+if(SUPPORT_QT6)
+    include(libimageviewer-qt6.cmake)
+else()
+    include(libimageviewer-qt5.cmake)
+endif()
