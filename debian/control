@@ -1,7 +1,7 @@
-Source: image-editor
+Source: velora-image-editor
 Section: utils
 Priority: optional
-Maintainer: Deepin Packages Builder <packages@deepin.com>
+Maintainer: Lingmo OS Team <team@lingmo.org>
 Build-Depends: 
  debhelper (>= 11), 
  cmake, 
@@ -33,8 +33,8 @@ Build-Depends:
  libmediainfo-dev,
  libffmpegthumbnailer-dev,
  libtiff-dev
-Standards-Version: 3.9.8
-Homepage: http://www.deepin.org
+Standards-Version: 4.5.0
+Homepage: https://github.com/LingmoOS/velora-image-editor
 
 # Support Qt6
 Package: libimageeditor6
