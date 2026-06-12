@@ -12,7 +12,6 @@
 #include <QtDebug>
 #include <QJsonDocument>
 #include <QTemporaryDir>
-#include <QRegularExpression>
 #include "unionimage/baseutils.h"
 #include "service/ffmpegvideothumbnailer.h"
 
