@@ -1,3 +1,9 @@
+velora-image-editor (6.5.4.lingmo.1) unstable; urgency=medium
+
+  * Rebuild for Lingmo OS.
+
+ -- Lingmo OS Team <team@lingmo.org>  Sat, 20 Jun 2026 20:39:00 +0800
+
 velora-image-editor (6.5.3.lingmo.1) unstable; urgency=medium
 
   * Rebuild for Lingmo OS.
