@@ -342,7 +342,7 @@ void LibViewPanel::initTopBar()
 void LibViewPanel::initOcr()
 {
     if (!m_ocrInterface) {
-        m_ocrInterface = new OcrInterface("com.deepin.Ocr", "/com/deepin/Ocr", QDBusConnection::sessionBus(), this);
+        m_ocrInterface = new OcrInterface("com.lingmo.Ocr", "/com/lingmo/Ocr", QDBusConnection::sessionBus(), this);
     }
 }
 
@@ -839,7 +839,7 @@ static void setWallpaperWithDBus(const QString &path)
 {
     //202011/12 bug54279 设置壁纸代码改变，采用DBus
     qDebug() << "SettingWallpaper: " << "flatpak" << path;
-    QDBusInterface interface("com.deepin.daemon.Appearance",
+    QDBusInterface interface("com.lingmo.daemon.Appearance",
                                  "/com/deepin/daemon/Appearance",
                                  "com.deepin.daemon.Appearance");
 
@@ -860,7 +860,7 @@ static void setWallpaperWithDBus(const QString &path)
 
         // wayland下设置壁纸使用，2020/09/21
         if (isWayland) {
-            QDBusInterface interfaceWayland("com.deepin.daemon.Display", "/com/deepin/daemon/Display", "com.deepin.daemon.Display");
+            QDBusInterface interfaceWayland("com.lingmo.daemon.Display", "/com/lingmo/daemon/Display", "com.lingmo.daemon.Display");
             screenname = qvariant_cast< QString >(interfaceWayland.property("Primary"));
         } else {
             screenname = QGuiApplication::primaryScreen()->name();

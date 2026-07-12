@@ -7,7 +7,7 @@
 
 TEST_F(gtestview, ocr_openImage)
 {
-    OcrInterface *m_ocrInterface = new OcrInterface("com.deepin.Ocr", "/com/deepin/Ocr", QDBusConnection::sessionBus(), nullptr);
+    OcrInterface *m_ocrInterface = new OcrInterface("com.lingmo.Ocr", "/com/lingmo/Ocr", QDBusConnection::sessionBus(), nullptr);
     QImage img(QApplication::applicationDirPath() + "/test/jpg.jpg");
     m_ocrInterface->openImage(img);
     bool bRet = false;
@@ -21,7 +21,7 @@ TEST_F(gtestview, ocr_openImage)
 
 TEST_F(gtestview, ocr_openImageAndName)
 {
-    OcrInterface *m_ocrInterface = new OcrInterface("com.deepin.Ocr", "/com/deepin/Ocr", QDBusConnection::sessionBus(), nullptr);
+    OcrInterface *m_ocrInterface = new OcrInterface("com.lingmo.Ocr", "/com/lingmo/Ocr", QDBusConnection::sessionBus(), nullptr);
     QImage img(QApplication::applicationDirPath() + "/test/jpg.jpg");
     m_ocrInterface->openImageAndName(img, QApplication::applicationDirPath() + "/test/jpg.jpg");
     bool bRet = false;

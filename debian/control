@@ -1,4 +1,4 @@
-Source: velora-image-editor
+Source: lingmo-image-editor
 Section: utils
 Priority: optional
 Maintainer: Lingmo OS Team <team@lingmo.org>
@@ -59,7 +59,7 @@ Conflicts:
  libimage-viewer
 Replaces:
  libimage-viewer
-Recommends: libqt6libqgtk2, kimageformat6-plugins, deepin-ocr, ffmpegthumbnailer, ffmpeg
+Recommends: libqt6libqgtk2, kimageformat6-plugins, lingmo-ocr, ffmpegthumbnailer, ffmpeg
 Description: Image Viewer library.
  Deepin Image Viewer library.
 
@@ -70,7 +70,7 @@ Conflicts:
  libimage-viewer-dev
 Replaces:
  libimage-viewer-dev
-Recommends: libqt6libgtk2, kimageformat6-plugins, deepin-ocr
+Recommends: libqt6libgtk2, kimageformat6-plugins, lingmo-ocr
 Description: Image Viewer library development headers.
  Deepin Image Viewer library development headers.
 
@@ -82,7 +82,7 @@ Conflicts:
  libimage-viewer
 Replaces:
  libimage-viewer
-Recommends: libqt5libqgtk2, kimageformat-plugins, deepin-ocr, ffmpegthumbnailer, ffmpeg
+Recommends: libqt5libqgtk2, kimageformat-plugins, lingmo-ocr, ffmpegthumbnailer, ffmpeg
 Description: Image Viewer library.
  Deepin Image Viewer library.
 
@@ -93,6 +93,6 @@ Conflicts:
  libimage-viewer-dev
 Replaces:
  libimage-viewer-dev
-Recommends: libqt5libqgtk2, kimageformat-plugins, deepin-ocr
+Recommends: libqt5libqgtk2, kimageformat-plugins, lingmo-ocr
 Description: Image Viewer library development headers.
  Deepin Image Viewer library development headers.

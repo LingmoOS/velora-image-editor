@@ -23,7 +23,7 @@ class OcrInterface: public QDBusAbstractInterface
 public:
     static inline const char *staticInterfaceName()
     {
-        return "com.deepin.Ocr";
+        return "com.lingmo.Ocr";
     }
 
 public:
@@ -88,7 +88,7 @@ Q_SIGNALS: // SIGNALS
 };
 
 namespace com {
-namespace deepin {
+namespace lingmo {
 typedef ::OcrInterface Ocr;
 }
 }
